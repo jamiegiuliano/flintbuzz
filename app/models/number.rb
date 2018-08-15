@@ -2,6 +2,7 @@
 class Number < ApplicationRecord
   def output
     entry = input.to_i
+
     if (entry % 15).zero?
       'flintbuzz'
     elsif (entry % 5).zero?
