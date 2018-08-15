@@ -1,1 +1,5 @@
-$('.final').html("<%= @number.output %>")
+$(document).ready(function() {
+  $('.final').html("<%= @number.output %>");
+  // Empty the form input
+  $('input#number_input').val('')
+})

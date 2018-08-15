@@ -6,7 +6,7 @@ class Number < ApplicationRecord
       'flintbuzz'
     elsif (entry % 5).zero?
       'buzz'
-    elsif e(entry % 3).zero?
+    elsif (entry % 3).zero?
       'flint'
     else
       entry

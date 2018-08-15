@@ -1,10 +1,11 @@
-<%= form_for(@number, remote: true) do |form| %>
-    <%= form.label "Input any number:" %>
-    <%= form.text_field :input %><br />
-
-    <%= form.submit %>
-<% end %>
-
-<div class="final">
-
+<div class="row">
+  <div class="form">
+    <%= form_for(@number, remote: true) do |form| %>
+        <%= form.label "Input any number:" %>
+        <%= form.text_field :input %>
+        <br></br>
+        <%= form.submit %>
+    <% end %>
+  </div>
+  <span class="final"></span>
 </div>
